@@ -21,7 +21,7 @@ jobs:
    - uses: actions/checkout@master
    
    - name: Upload file to bucket
-   uses: zdurham/s3-upload-github-action@master
+   uses: jovicon/s3-upload-github-action@master
    with:
      args: --acl public-read
    env:
