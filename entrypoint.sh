@@ -15,12 +15,12 @@ if [ -z "$AWS_SECRET_ACCESS_KEY" ]; then
   exit 1
 fi
 
-if [-z "$FILE"]; then
+if [ -z "$FILE" ]; then
   echo "FILE is not set. Quitting"
   exit 1
 fi
 
-if [ -z "$AWS_REGION"]; then
+if [ -z "$AWS_REGION" ]; then
   AWS_REGION="eu-central-1"
 fi
 
