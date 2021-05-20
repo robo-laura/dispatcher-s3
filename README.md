@@ -20,14 +20,14 @@ jobs:
     - uses: actions/checkout@master
    
     - name: Upload file to bucket
-    uses: a-sync/s3-upload-github-action@master
-    with:
-      args: --acl public-read
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      AWS_REGION: 'eu-central-1'
-      S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-      S3_KEY: ${{ secrets.S3_KEY }}
-      FILE: ./lambda.zip
+      uses: a-sync/s3-upload-github-action@master
+      with:
+        args: --acl public-read
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'eu-central-1'
+        S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        S3_KEY: ${{ secrets.S3_KEY }}
+        FILE: ./lambda.zip
 ```
