@@ -11,7 +11,7 @@ All the parameters and additional arguments are passed to the [`aws s3 cp` comma
 
 ```yaml
 # inside .github/workflows/your-action.yml
-name: Add File to Bucket
+name: Add a file to a bucket
 on: push
 
 jobs:
@@ -36,7 +36,7 @@ jobs:
 
 ```yaml
 # inside .github/workflows/your-action.yml
-name: Upload a folder to a bucket, excluding .log files
+name: Add a folder to a bucket, excluding .log files
 on: push
 
 jobs:
