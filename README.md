@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Upload file to bucket
-      uses: a-sync/s3-upload-github-action@master
+      uses: a-sync/s3-uploader@master
       with:
         args: --acl public-read
       env:
@@ -47,7 +47,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Upload folder to bucket
-      uses: a-sync/s3-upload-github-action@master
+      uses: a-sync/s3-uploader@master
       with:
         args: --recursive --exclude "*.log"
       env:
