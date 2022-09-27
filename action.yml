@@ -1,9 +1,9 @@
-name: "S3 uploader"
-description: "Upload a file or folder to an S3 bucket using the latest AWS client and the `s3 cp` command."
-author: "a-sync"
+name: "dispatcher-s3"
+description: "Upload files to S3 using the latest AWS client"
+author: "data-lex"
 runs:
   using: docker
   image: Dockerfile
 branding:
-  icon: upload-cloud
-  color: blue
+  icon: box
+  color: orange
