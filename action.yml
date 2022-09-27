@@ -1,6 +1,6 @@
 name: "dispatcher-s3"
 description: "Upload files to S3 using the latest AWS client"
-author: "data-lex"
+author: "robo-laura"
 runs:
   using: docker
   image: Dockerfile
